@@ -1,2 +1,3 @@
 # roman_numeral_converter
-Converts a roman numeral to integer
+Converts a valid roman numeral to integer. Numeral must be < 4000.
+

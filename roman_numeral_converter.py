@@ -16,10 +16,11 @@ def convert(roman_numeral_string):
                 total += nums[numeral]
         else:
             last_numeral = roman_numeral_string[pos-1]
-            if numeral in ['I', 'V', 'X'] and nums[numeral] < nums[last_numeral]:
+            if numeral != 'M' and nums[numeral] <= nums[last_numeral]:
                 total += nums[numeral]
             else:
                 total += nums[numeral]
                 total -= nums[last_numeral] * 2
     return total
+
         
